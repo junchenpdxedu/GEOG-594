@@ -23,6 +23,7 @@ h2{font-size:1.3rem;margin:40px 0 12px}
 ol.weeks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .week{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-decoration:none;color:inherit}
 a.week:hover{border-color:var(--accent)}
+h3.wk{font-size:1.05rem;margin:28px 0 10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .week .label{font-size:.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .week .title{display:block;font-size:1.15rem;font-weight:700;color:var(--accent);margin:2px 0 4px}
 .week .desc{display:block;font-size:.95rem;color:var(--muted)}
@@ -41,21 +42,48 @@ footer{padding-top:40px;padding-bottom:48px;color:var(--muted);font-size:.9rem}
 </header>
 <main id="main">
   <h2 id="lectures">Weekly lectures</h2>
-  <ol class="weeks" aria-labelledby="lectures">
-    <li>
-      <a class="week" href="Lecture1a.html">
-        <span class="label">Week 1</span>
-        <span class="title">Lecture 1a: Introduction</span>
-        <span class="desc">Course orientation, data models, vector and raster data, hydrology vs. hydrography, and GIS data sources.</span>
-      </a>
-    </li>
-    <!-- To add a week, copy the <li>…</li> block above, paste it here, and change the week, file name, title, and description. -->
+  <h3 class="wk" id="week1">Week 1</h3>
+  <ol class="weeks" aria-labelledby="week1">
+      <li>
+        <a class="week" href="Lecture1a.html">
+          <span class="title">Lecture 1a: Introduction</span>
+          <span class="desc">Course orientation, data models, vector and raster data, hydrology vs. hydrography, and GIS data sources.</span>
+        </a>
+      </li>
+      <li>
+        <a class="week" href="Lecture1b.html">
+          <span class="title">Lecture 1b: Cartographic Principles</span>
+          <span class="desc">Visual contrast, legibility, figure-ground, hierarchy and layout balance, with example maps.</span>
+        </a>
+      </li>
   </ol>
+  <h3 class="wk" id="week2">Week 2</h3>
+  <ol class="weeks" aria-labelledby="week2">
+      <li>
+        <a class="week" href="Lecture2a.html">
+          <span class="title">Lecture 2a: Graduate Term Project</span>
+          <span class="desc">Teams, topics, due dates, and what goes in the proposal, annotated bibliography and report.</span>
+        </a>
+      </li>
+      <li>
+        <a class="week" href="Lecture2b.html">
+          <span class="title">Lecture 2b: Example Term Project</span>
+          <span class="desc">A past graduate project: Oregon lakeshed terrain roughness, drainage density and precipitation.</span>
+        </a>
+      </li>
+      <li>
+        <a class="week" href="Lecture2c.html">
+          <span class="title">Lecture 2c: Tapered Streams 101</span>
+          <span class="desc">Step-by-step ArcGIS Pro demo: vary stream line widths by flow using NHDPlus HR.</span>
+        </a>
+      </li>
+  </ol>
+  <!-- To add a week: copy a whole Week block (the h3 line and its <ol> ... </ol>), paste it above this comment, change "week2" to "week3" in both places, and edit the lecture cards. -->
 
   <h2 id="access">Accessibility</h2>
   <div class="formats" aria-labelledby="access">
-    <p>Each lecture page includes the slide text, a description of every image, and the full lecture notes, and works with screen readers and on phones.</p>
-    <p>Slides (PowerPoint and accessible PDF) and a Word handout for each week are on Canvas.</p>
+    <p>Each lecture page includes the slide text, a description of every image, and any lecture notes, and works with screen readers and on phones.</p>
+    <p>The original slides are on Canvas.</p>
     <p>Need another format or an accommodation? Email the instructor or contact the Disability Resource Center.</p>
   </div>
 </main>
